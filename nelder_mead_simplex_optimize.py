@@ -90,12 +90,12 @@ x1 = np.array([10.0,20.0, 5.0])
 x2 = np.array([11.0,20.0, 5.0])
 x3 = np.array([10.0,21.0, 5.0])
 x4= np.array([10.0,20.0, 6.0])
-search_space, best_solution = nelder_meat_simplex(np.array([x1, x2, x3, x4]), limit = 500)
+best_solution, search_space = nelder_meat_simplex(np.array([x1, x2, x3, x4]), limit = 500)
 
 x1 = np.array([10.0,25.0])
 x2 = np.array([11.0,20.0])
 x3 = np.array([10.0,21.0])
-search_space, best_solution = nelder_meat_simplex(np.array([x1, x2, x3]), limit = 90)
+best_solution, search_space = nelder_meat_simplex(np.array([x1, x2, x3]), limit = 90)
 
 # Plot the travel in search space.
 fig = plt.figure()
